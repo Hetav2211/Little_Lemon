@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #495E57;
+  --secondary-color: #F4CE14;
+  --white: #FFFFFF;
+  --dark-overlay: rgba(0, 0, 0, 0.5);
+}
+
+.landing-page {
+  font-family: 'Karla', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Hero Carousel Styling */
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.carousel-background {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 50px;
+  position: relative;
+  transition: background-image 0.8s ease-in-out;
+  background-repeat: no-repeat;
+}
+
+/* Advanced Background Transition */
+.carousel-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark-overlay);
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+
+/* Hero Buttons Styling */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+  perspective: 1000px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  flex: 0 1 auto;
+}
+
+.hero-buttons .btn:hover {
+  transform: 
+    scale(1.05) 
+    translateZ(50px) 
+    rotateX(-5deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Quick Actions Section */
+.quick-actions {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.quick-actions .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.quick-action-card {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.quick-action-card:hover {
+  transform: 
+    translateY(-15px) 
+    rotateX(5deg);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.action-icon {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transform: translateZ(30px);
+  transition: transform 0.3s ease;
+}
+
+.quick-action-card:hover .action-icon {
+  transform: translateZ(50px) rotate(360deg);
+}
+
+/* Special Offers Section */
+.special-offers {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.special-offers .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.offer-card {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.offer-card:hover {
+  transform: 
+    scale(1.05) 
+    rotateY(10deg);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.offer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Contact Modal Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.contact-item:hover {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-buttons .btn {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .quick-action-card,
+  .offer-card {
+    flex: 1 1 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Carousel Transition Animation */
+@keyframes fadeIn {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.carousel-item {
+  animation: fadeIn 0.1s ease-in-out;
+}

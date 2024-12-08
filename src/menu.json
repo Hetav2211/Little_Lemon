@@ -1,0 +1,109 @@
+{
+    "categories": [
+      {
+        "name": "Appetizers",
+        "items": [
+          {
+            "id": 1,
+            "name": "Lemon Chicken",
+            "description": "Succulent shrimp sautéed in a zesty lemon garlic butter",
+            "price": 12.99,
+            "image": "src/assets/lemon chicken.svg"
+          },
+          {
+            "id": 2,
+            "name": "Bruschetta",
+            "description": "Fresh tomatoes, basil, and mozzarella on toasted baguette",
+            "price": 8.99,
+            "image": "src/assets/bruschetta.svg"
+          },
+          {
+            "id": 3,
+            "name": "Grilled Salmon",
+            "description": "Fresh tomatoes, basil and mozzarella on toasted baguette",
+            "price": 8.99,
+            "image": "src/assets/grilled salmon.svg"
+          }
+        ]
+      },
+
+      {
+        "name": "Entrees",
+        "items": [
+          {
+            "id": 4,
+            "name": "Savory party bread",
+            "description": "Tender chicken breast with lemon",
+            "price": 19.99,
+            "image": "src/assets/savory party bread.svg"
+          },
+          {
+            "id": 5,
+            "name": "Stuffed Mashroom",
+            "description": "Fresh mashroom, grilled to perfection with a hint of lemon",
+            "price": 22.99,
+            "image": "src/assets/stuffed mashrooms.svg"
+          },
+          {
+            "id": 6,
+            "name": "plank salmon",
+            "description": "Fresh salmon, grilled to perfection lemon",
+            "price": 22.99,
+            "image": "src/assets/plank salmon.svg"
+          }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "id": 7,
+            "name": "Tiramisu",
+            "description": "Tart and sweet lemon filling on a shortbread crust",
+            "price": 6.99,
+            "image": "src/assets/tiramisu.svg"
+          },
+          {
+            "id": 8,
+            "name": "Cheesecake",
+            "description": "Creamy cheesecake with a hint of lemon zest very sweet",
+            "price": 7.99,
+            "image": "src/assets/cheesecake.svg"
+          },
+          {
+            "id": 9,
+            "name": "Baklava",
+            "description": "Creamy Baklava with a hint of lemon zest",
+            "price": 6.50,
+            "image": "src/assets/baklava.svg"
+          }
+        ]
+      },
+      {
+        "name": "Drinks",
+        "items": [
+          {
+            "id": 10,
+            "name": "Lemonade",
+            "description": "Freshly squeezed lemonade, sweetened to perfection",
+            "price": 3.99,
+            "image": "src/assets/lemonade.svg"
+          },
+          {
+            "id": 11,
+            "name": "Iced Tea",
+            "description": "Brewed to perfection,ice with a squeeze of lemon",
+            "price": 2.99,
+            "image": "src/assets/iced tea.svg"
+          },
+          {
+            "id": 12,
+            "name": "Campari",
+            "description": "100% fresh Campari, squeezed to order",
+            "price": 4.99,
+            "image": "src/assets/campari.svg"
+          }
+        ]
+      }
+    ]
+  }

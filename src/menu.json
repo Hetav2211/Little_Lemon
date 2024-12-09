@@ -8,7 +8,7 @@
             "name": "Lemon Chicken",
             "description": "Succulent shrimp sautéed in a zesty lemon garlic butter",
             "price": 12.99,
-            "image": "src/assets/lemon chicken.svg"
+            "image": "src/assets/lemon_chicken.svg"
           },
           {
             "id": 2,
@@ -22,7 +22,7 @@
             "name": "Grilled Salmon",
             "description": "Fresh tomatoes, basil and mozzarella on toasted baguette",
             "price": 8.99,
-            "image": "src/assets/grilled salmon.svg"
+            "image": "src/assets/grilled_salmon.svg"
           }
         ]
       },
@@ -35,21 +35,21 @@
             "name": "Savory party bread",
             "description": "Tender chicken breast with lemon",
             "price": 19.99,
-            "image": "src/assets/savory party bread.svg"
+            "image": "src/assets/savory_party_bread.svg"
           },
           {
             "id": 5,
             "name": "Stuffed Mashroom",
             "description": "Fresh mashroom, grilled to perfection with a hint of lemon",
             "price": 22.99,
-            "image": "src/assets/stuffed mashrooms.svg"
+            "image": "src/assets/stuffed_mashrooms.svg"
           },
           {
             "id": 6,
             "name": "plank salmon",
             "description": "Fresh salmon, grilled to perfection lemon",
             "price": 22.99,
-            "image": "src/assets/plank salmon.svg"
+            "image": "src/assets/plank_salmon.svg"
           }
         ]
       },
@@ -94,7 +94,7 @@
             "name": "Iced Tea",
             "description": "Brewed to perfection,ice with a squeeze of lemon",
             "price": 2.99,
-            "image": "src/assets/iced tea.svg"
+            "image": "src/assets/iced_tea.svg"
           },
           {
             "id": 12,

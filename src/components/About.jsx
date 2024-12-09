@@ -18,7 +18,7 @@ import {
   Instagram, 
   Twitter 
 } from 'react-bootstrap-icons';
-import '../Styles/About.css';
+import '/src/Styles/About.css';
 
 function About() {
   return (

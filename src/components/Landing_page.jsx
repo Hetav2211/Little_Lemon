@@ -18,9 +18,9 @@ import {
 } from 'react-bootstrap-icons';
 import '../Styles/Landing_page.css';
 
-import image1 from "../assets/land1.svg";
-import image2 from "../assets/land2.svg";
-import image3 from "../assets/land3.svg";
+import image1 from "/src/assets/land1.svg";
+import image2 from "/src/assets/land2.svg";
+import image3 from "/src/assets/land3.svg";
 
 const LandingPage = () => {
   const [index, setIndex] = useState(0);
@@ -68,7 +68,7 @@ const LandingPage = () => {
       setIndex((prevIndex) => 
         prevIndex === 2 ? 0 : prevIndex + 1
       );
-    }, 3000); // Change image every 3 seconds
+    }, 3500); // Change image every 3 seconds
   
     return () => clearInterval(timer);
   }, []);

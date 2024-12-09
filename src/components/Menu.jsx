@@ -9,10 +9,10 @@ import {
   Form,
   Badge
 } from 'react-bootstrap';
-import { useCart } from '../components/CartContext';
-import '../Styles/Menu.css';
-import menuData from '../menu.json';
-import Cart from '../components/Cart';
+import { useCart } from '/src/components/CartContext';
+import '/src/Styles/Menu.css';
+import menuData from '/src/menu.json';
+import Cart from '/src/components/Cart';
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

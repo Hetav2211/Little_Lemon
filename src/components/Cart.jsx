@@ -13,8 +13,8 @@ import {
   FaPlus,
   FaMinus
 } from 'react-icons/fa';
-import { useCart } from '../components/CartContext';
-import '../Styles/Cart.css';
+import { useCart } from '/src/components/CartContext';
+import '/src/Styles/Cart.css';
 
 const Cart = () => {
   const { 

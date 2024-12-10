@@ -11,7 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import '@fortawesome/fontawesome-freesrc/Styles/BookTable.css';
+import '/src/Styles/BookTable.css';
 
 const BookingForm = () => {
   const navigate = useNavigate();

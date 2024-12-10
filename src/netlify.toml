@@ -11,7 +11,7 @@
 [[plugins]]
   package = "@netlify/plugin-react"
 
-  [[headers]]
+[[headers]]
   for = "*.svg"
   [headers.values]
     Content-Type = "image/svg+xml"

@@ -17,7 +17,7 @@ import {
   Telephone
 } from 'react-bootstrap-icons';
 import '../Styles/Landing_page.css';
-
+import { Link } from 'react-router-dom';
 import image1 from "/assets/land1.svg";
 import image2 from "/assets/land2.svg";
 import image3 from "/assets/land3.svg";
@@ -41,7 +41,7 @@ const LandingPage = () => {
       icon: <List size={30} />,
       title: "View Menu",
       description: "Explore our dishes",
-      link: "/menu"
+      link: "/Menu"
     },
     {
       icon: <Cart size={30} />,
@@ -89,14 +89,15 @@ const LandingPage = () => {
               style={{ backgroundImage: `url(${image})` }}
             >
               <div className="hero-buttons">
+                <Link to="/BookTable">
                 <Button 
                   variant="primary" 
-                  size="lg" 
-                  link="/BookTable"
+                  size="lg"
                   className="me-3"
                 >
                   Book a Table
                 </Button>
+                </Link>
                 <Button 
                   variant="outline-light" 
                   size="lg"
@@ -119,12 +120,13 @@ const LandingPage = () => {
                 <div className="action-icon">{action.icon}</div>
                 <h3>{action.title}</h3>
                 <p>{action.description}</p>
+              <Link to={action.link}>
                 <Button 
                   variant="outline-primary" 
-                  href={action.link}
                 >
                   Learn More
                 </Button>
+              </Link>
               </div>
             </Col>
           ))}

@@ -20,7 +20,7 @@ function NavigationBar() {
         {/* Brand Logo */}
         <Navbar.Brand as={Link} to="/">
           <img 
-            src="src/assets/logo.svg" 
+            src="/assets/logo.svg" 
             alt="Little Lemon Restaurant" 
             className="logo" 
           />

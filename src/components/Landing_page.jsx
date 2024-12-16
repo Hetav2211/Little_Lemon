@@ -18,9 +18,9 @@ import {
 } from 'react-bootstrap-icons';
 import '../Styles/Landing_page.css';
 import { Link } from 'react-router-dom';
-import image1 from "/assets/land1.svg";
-import image2 from "/assets/land2.svg";
-import image3 from "/assets/land3.svg";
+import image1 from "/assets/land1.png";
+import image2 from "/assets/land2.png";
+import image3 from "/assets/land3.png";
 
 const LandingPage = () => {
   const [index, setIndex] = useState(0);

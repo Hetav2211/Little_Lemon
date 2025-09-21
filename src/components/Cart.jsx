@@ -175,5 +175,4 @@ const Cart = () => {
     </Modal>
   );
 };
-
 export default Cart;
